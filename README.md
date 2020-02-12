@@ -1,0 +1,23 @@
+## chacha20.sh
+#### by zx2c4
+
+You probably shouldn't use this for anything.
+
+### Usage
+
+```
+chacha20 [HEX KEY] [NUMERIC NONCE] [HEX CIPHERTEXT]
+```
+
+### Example
+
+```
+local ciphertext="d42efa92e92968b7542cf7a42db750b5c5b29d175e0aca37bf60aed298e9fa596762e6430c7780823361a3ffc1a08f56bcec654388a5ff516430ee34b75c2868c352d2ac782aa610b8b24c804f99b236948f66cba191ed06426dc1ae5593dd939e88347f98ebbe61f9a90fd9c487d5efcc718c0ecead02cfa261dfb1fe3bdcc058b571a183c9b4af9d5412cdea06d64ee5270cc3bba80a8175c3c9d4353e539faa20c068392c96395381da070f44a5470eb3870d1bc1e54135125896698a1aa39d3dd4b18e1f9687dad319e2b13a1974a0009f4dbccb0ce9ec10df2a88dc3051465653986a2614055481550b3c85dd33811129824635e1db597b"
+local key="a92075897e378548a3fb7be830a7e36ea6c17117c16c9bc2def0a719eccec653"
+local nonce=5394271251748129296
+
+chacha20 "$key" "$nonce" "$ciphertext"
+```
+
+
+
